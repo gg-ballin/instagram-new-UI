@@ -1,14 +1,22 @@
 {
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+	"extends": "expo/tsconfig.base",
+	"compilerOptions": {
+		"strict": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["app/*"],
+			"@assets/*": ["assets/*"],
+			"@atoms/*": ["components/atoms/*"],
+			"@molecules/*": ["components/molecules/*"],
+			"@organisms/*": ["components/organisms/*"],
+			"@templates/*": ["components/templates/*"],
+			"@hooks/*": ["hooks/*"],
+			"@interfaces/*": ["interfaces/*"],
+			"@modules/*": ["modules/*"],
+			"@routes/*": ["routes/*"],
+			"@theme/*": ["theme/*"],
+			"@utils/*": ["utils/*"]
+		}
+	},
+	"include": ["**/*.ts", "**/*.tsx"]
 }
